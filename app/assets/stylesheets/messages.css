@@ -1,10 +1,16 @@
-/* トップページ全体 */
+/**********************
+トップページ全体
+***********************/
+
 .wapper{
   display: flex;
 }
 
 
-/* サイドバー */
+/***********************
+サイドバー 
+************************/
+
 .side-bar{
   height: 100vh;
   width: 300px;
@@ -59,26 +65,119 @@
   text-decoration: none;
 }
 
-/* チャット画面 */
+/***********************
+チャット画面
+************************/
+
 .chat{
   height: 100vh;
   width: calc(100vw - 300px);
   background-color: #ffffff;
 }
 
+/* チャット画面ヘッダー */
 .chat-header{
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.chat-main{
+.current-room{
+  font-weight: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+.chat-edit-btn{
+  margin-top: 40px;
+}
+
+.chat-edit-btn a{
+  border: 1px solid darkred;
+  color: darkred;
+  text-decoration: none;
+  padding: 20px;
+}
+
+
+/* チャット画面メッセージ */
+.chat-messages{
   height: calc(100vh - 100px - 90px);
   background-color: #FAFAFA;
   padding: 46px 40px 0 40px;
+  overflow: scroll;
 }
 
-.chat-form{
+.chat-message{
+  margin-bottom: 40px;
+}
+
+.chat-message_upper{
+  padding-top: 10px;
+  display:flex;
+}
+
+.chat-message_name{
+  margin-right: 10px;
+  font-size: 16px;
+  color: #454A54;
+}
+
+.chat-message_date{
+  font-size: 12px;
+  color: #999;
+}
+
+.chat-message_text{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #454A54;
+}
+
+/* チャット画面フォーム */
+.chat-form-wapper{
    height: 90px;
    background-color: #DADADA;
    padding: 20px 40px;
+   display: flex;
+}
+
+.chat-form{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.chat-form_text{
+  background-color: white;
+  padding-left: 10px;
+  margin-right: 15px;
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+  position: absolute;
+  right: 85px;
+}
+
+.chat-form_send{
+  color: white;
+  background-color: #38AEF0;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
 }
