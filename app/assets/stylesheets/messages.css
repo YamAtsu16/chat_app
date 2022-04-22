@@ -162,7 +162,7 @@
   display: none;
 }
 
-.form-image{
+/* .form-image{
   font-size: 12px;
   background-color: lightblue;
   color: white;
@@ -172,7 +172,7 @@
   text-align: center;
   position: absolute;
   right: 85px;
-}
+} */
 
 .chat-form_send{
   color: white;
@@ -180,4 +180,28 @@
   height: 50px;
   padding: 0 20px;
   border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
 }
