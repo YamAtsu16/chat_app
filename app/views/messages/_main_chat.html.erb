@@ -28,11 +28,11 @@
 </div>
 <%# チャット画面フォーム %>
 <div class="chat-form-wapper">
-  <form class="chat-form"> 
-    <input type="text" placeholder="type a message" class="chat-form_text">
+  <%= form_with model: [@room, @message], class: "chat-form", local: true do |f| %>
+    <%= f.text_field :content, placeholder: "type a message", class: "chat-form_text" %>
     <label class="form-image">画像
-      <input type="file" class="hidden">
+      <%= f.text_field :image, class: "hidden" %>
     </label>
-    <input type="submit" class="chat-form_send">
-  </form>
+    <%= f.submit "送信", class: "chat-form_send" %>
+  <% end %>
 </div>
