@@ -7,24 +7,7 @@
 </div>
 <%# チャット画面メッセージ %>
 <div class="chat-messages">
-  <div class="chat-message">
-    <div class="chat-message_upper">
-      <div class="chat-message_name">太郎さん</div>
-      <div class="chat-message_date">2022/4/1(Monday) 12:00:00</div>
-    </div>
-    <div class="chat-message_text">
-      はじめまして、太郎と申します。
-    </div>
-  </div>
-    <div class="chat-message">
-    <div class="chat-message_user-info">
-      <div class="chat-message_name">花子さん</div>
-      <div class="chat-message_date">2022/4/1(Monday) 12:00:00</div>
-    </div>
-    <div class="chat-message_text">
-      はじめまして、花子と申します。
-    </div>
-  </div>
+    <%= render partial: 'message', collection: @messages %>
 </div>
 <%# チャット画面フォーム %>
 <div class="chat-form-wapper">
