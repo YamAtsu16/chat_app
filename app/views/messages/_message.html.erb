@@ -1,0 +1,13 @@
+<div class="chat-message">
+  <div class="chat-message_upper">
+    <div class="chat-message_name">
+      <%= message.user.name%>
+    </div>
+    <div class="chat-message_date">
+      <%= l message.created_at%>
+    </div>
+  </div>
+  <div class="chat-message_text">
+    <%= message.content%>
+  </div>
+</div>
